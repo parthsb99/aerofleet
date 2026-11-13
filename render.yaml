@@ -39,7 +39,6 @@ services:
     runtime: static
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
-    plan: free
     routes:
       # SPA routing — all paths serve index.html so React Router handles them
       - type: rewrite

@@ -73,31 +73,37 @@ const httpServer = http.createServer(app);
 initSocket(httpServer);
 
 const PORT     = process.env.PORT     || 5001;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/vsa_db';
+const MONGO_URI = process.env.MONGO_URI;
 
-mongoose.connect(MONGO_URI).then(() => {
-  console.log('Connected to MongoDB');
-  if (authRoutes.seedAdminUser) {
-    authRoutes.seedAdminUser();
-  }
-  const server = httpServer.listen(PORT, () => {
-    console.log(`Server running on port ${PORT} (HTTP + Socket.IO)`);
-  });
-
-  // Graceful shutdown handling for container termination
-  const gracefulShutdown = (signal) => {
-    console.log(`Received ${signal}. Closing server gracefully...`);
-    server.close(() => {
-      console.log('HTTP & Socket.IO server closed.');
-      mongoose.connection.close(false).then(() => {
-        console.log('MongoDB connection closed.');
-        process.exit(0);
-      }).catch(() => process.exit(0));
-    });
-  };
-
-  process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
-  process.on('SIGINT', () => gracefulShutdown('SIGINT'));
-}).catch(err => {
-  console.error('MongoDB connection error:', err);
+// Start HTTP server immediately so Render health checks pass, then connect DB
+const server = httpServer.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT} (HTTP + Socket.IO)`);
 });
+
+if (!MONGO_URI) {
+  console.warn('⚠️ WARNING: MONGO_URI environment variable is not defined.');
+} else {
+  mongoose.connect(MONGO_URI).then(() => {
+    console.log('Connected to MongoDB');
+    if (authRoutes.seedAdminUser) {
+      authRoutes.seedAdminUser();
+    }
+  }).catch(err => {
+    console.error('MongoDB connection error:', err);
+  });
+}
+
+// Graceful shutdown handling for container termination
+const gracefulShutdown = (signal) => {
+  console.log(`Received ${signal}. Closing server gracefully...`);
+  server.close(() => {
+    console.log('HTTP & Socket.IO server closed.');
+    mongoose.connection.close(false).then(() => {
+      console.log('MongoDB connection closed.');
+      process.exit(0);
+    }).catch(() => process.exit(0));
+  });
+};
+
+process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
+process.on('SIGINT', () => gracefulShutdown('SIGINT'));

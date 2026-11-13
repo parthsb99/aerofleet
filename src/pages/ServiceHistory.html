@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AeroFleet - Service History</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c2c7d0",
+                        "secondary-fixed": "#dde1ff",
+                        "on-primary": "#313030",
+                        "surface-stroke": "#30363d",
+                        "on-tertiary": "#2c3138",
+                        "on-secondary": "#002388",
+                        "surface-container-high": "#282a2b",
+                        "tertiary": "#c2c7d0",
+                        "on-primary-container": "#7b7979",
+                        "on-secondary-fixed": "#001356",
+                        "on-primary-fixed-variant": "#474646",
+                        "inverse-on-surface": "#2f3131",
+                        "on-error-container": "#ffdad6",
+                        "outline-variant": "#444748",
+                        "on-background": "#e2e2e2",
+                        "secondary": "#b8c3ff",
+                        "surface-container": "#1e2020",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary-fixed": "#dee2ec",
+                        "on-surface-variant": "#c4c7c7",
+                        "electric-blue": "#2e5bff",
+                        "surface-tint": "#c9c6c5",
+                        "tertiary-container": "#060a11",
+                        "primary-fixed": "#e5e2e1",
+                        "secondary-fixed-dim": "#b8c3ff",
+                        "error-container": "#93000a",
+                        "surface": "#121414",
+                        "on-secondary-fixed-variant": "#0035be",
+                        "secondary-container": "#0043eb",
+                        "on-secondary-container": "#c6ceff",
+                        "surface-bright": "#37393a",
+                        "on-tertiary-fixed": "#171c23",
+                        "error": "#ffb4ab",
+                        "surface-dim": "#121414",
+                        "primary-container": "#0a0a0a",
+                        "outline": "#8e9192",
+                        "on-error": "#690005",
+                        "primary": "#c9c6c5",
+                        "surface-container-low": "#1a1c1c",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "on-primary-fixed": "#1c1b1b",
+                        "background": "#121414",
+                        "on-tertiary-fixed-variant": "#42474f",
+                        "on-tertiary-container": "#757982",
+                        "on-surface": "#e2e2e2",
+                        "on-surface-muted": "#8b949e",
+                        "surface-container-highest": "#333535",
+                        "surface-variant": "#333535",
+                        "inverse-primary": "#5f5e5e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "base": "8px",
+                        "xl": "32px",
+                        "lg": "24px",
+                        "xs": "4px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "48px",
+                        "md": "16px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-lg min-h-screen flex overflow-x-hidden">
+<!-- SideNavBar -->
+<aside class="hidden md:flex h-screen w-64 left-0 top-0 fixed bg-surface-container border-r border-surface-stroke flex-col py-lg z-40">
+<!-- Header -->
+<div class="px-lg pb-xl border-b border-surface-stroke mb-md">
+<div class="flex items-center gap-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center overflow-hidden border border-surface-stroke">
+<img alt="System Logo" class="w-full h-full object-cover" data-alt="A sleek, minimalist geometric logo resembling a stylized letter 'A' or a wing, rendered in sharp white against a dark gradient background, emphasizing high-tech fleet management and speed. Modern dark mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ3KZzlTJ9ChE0l1JnFVDNETxZZYFieqbSQNR38PCVOv-0VNBmzxdQ8wztO7cIn8kYtRfBDdSzR9DuODYnOeuudnhqcB-YVBQXAzKSb1ucEKJ9rbWz8EKFK0sqsDxNKCaNF1Fy3EgmgHVnRjl-Tf7lhup17q4QFTP672oDKp1XfXEeNrKSpE2La49VUGbcNNLARI-Xt-8-p_cR6fCDRGfjk9KwPzC-b8R_BqLY0NE24-1insekmPYEaQ"/>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md text-on-surface">Fleet Control</h1>
+<p class="font-label-md text-label-md text-electric-blue mt-xs">Premium Tier</p>
+</div>
+</div>
+</div>
+<!-- CTA -->
+<div class="px-lg mb-xl">
+<button class="w-full bg-electric-blue hover:bg-secondary-container text-white font-label-md text-label-md py-md rounded-lg transition-colors flex items-center justify-center gap-sm active:scale-95 duration-200">
+<span class="material-symbols-outlined" style="font-size: 18px;">add</span>
+                Add Vehicle
+            </button>
+</div>
+<!-- Navigation Tabs -->
+<nav class="flex-1 flex flex-col gap-xs px-sm">
+<!-- Dashboard (Inactive) -->
+<a class="flex items-center gap-md px-md py-md rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<!-- Book Service (Inactive) -->
+<a class="flex items-center gap-md px-md py-md rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">calendar_add_on</span>
+<span class="font-label-md text-label-md">Book Service</span>
+</a>
+<!-- Service History (Active) -->
+<a class="flex items-center gap-md px-md py-md rounded-lg bg-secondary-container text-on-secondary-container border-l-4 border-electric-blue hover:bg-surface-container-high transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="font-label-md text-label-md">Service History</span>
+</a>
+<!-- My Vehicles (Inactive) -->
+<a class="flex items-center gap-md px-md py-md rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">directions_car</span>
+<span class="font-label-md text-label-md">My Vehicles</span>
+</a>
+</nav>
+<!-- Footer Tabs -->
+<div class="mt-auto px-sm pt-md border-t border-surface-stroke flex flex-col gap-xs">
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-label-md text-label-md">Support</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-md text-label-md">Sign Out</span>
+</a>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 md:ml-64 flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="w-full top-0 z-50 bg-surface border-b border-surface-stroke flex justify-between items-center h-16 px-margin-desktop sticky">
+<div class="flex items-center gap-md">
+<span class="font-headline-md text-headline-md font-bold text-on-surface tracking-tighter">AeroFleet</span>
+</div>
+<div class="flex items-center gap-lg">
+<!-- Search (on_right) -->
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-muted" style="font-size: 20px;">search</span>
+<input class="bg-surface-container border border-surface-stroke text-on-surface font-body-sm rounded-full pl-10 pr-4 py-1.5 focus:outline-none focus:border-electric-blue transition-colors w-64 placeholder-on-surface-muted" placeholder="Search records..." type="text"/>
+</div>
+<!-- Trailing Icons -->
+<div class="flex items-center gap-sm">
+<button class="p-sm rounded-full text-on-surface-muted hover:text-electric-blue transition-colors cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-sm rounded-full text-on-surface-muted hover:text-electric-blue transition-colors cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+<!-- Profile -->
+<div class="w-8 h-8 rounded-full overflow-hidden border border-surface-stroke ml-sm">
+<img alt="Fleet Manager Profile" class="w-full h-full object-cover" data-alt="A professional headshot of a fleet manager, lit with moody, high-contrast studio lighting against a dark background, embodying technical expertise and authority. Minimalist dark mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYPM_BeTQZej2fs5m_wH_yWFFl-eppsWfzT66U_8ig-h4Lx6lvlw2YtpbZJmO-U1RvZz-loHFGxNh_IRWvyC6Jno8ys6YTi3cjoE3_MX0G9VhPOgwDbE03Ef_DkurDSm-vAnA42dazM-5SL5t05U0Z9gC7Aii2msn1z7edOQ5Z2u6eGIroxSijQ-xAMQQObwU0OQQIHCrNVuGl0MAb0gk1pZIpptXvQrySOqtopjUlCrB_bfdtqzKpBg"/>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-1 p-margin-mobile md:p-margin-desktop">
+<div class="max-w-7xl mx-auto">
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-xl gap-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xs">Maintenance Records</h2>
+<p class="font-body-lg text-body-lg text-on-surface-muted">Comprehensive log of all fleet service and repairs.</p>
+</div>
+<div class="flex gap-md">
+<button class="px-md py-sm rounded-lg border border-surface-stroke text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-sm">
+<span class="material-symbols-outlined" style="font-size: 16px;">filter_list</span>
+                            Filter
+                        </button>
+<button class="px-md py-sm rounded-lg border border-surface-stroke text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-sm">
+<span class="material-symbols-outlined" style="font-size: 16px;">download</span>
+                            Export
+                        </button>
+</div>
+</div>
+<!-- Data Grid (Modern Tabular View) -->
+<div class="bg-surface rounded-xl border border-surface-stroke overflow-hidden shadow-2xl">
+<!-- Table Header -->
+<div class="grid grid-cols-5 gap-md px-lg py-md border-b border-surface-stroke bg-surface-container-lowest">
+<div class="font-label-md text-label-md text-on-surface-muted uppercase tracking-wider">Date</div>
+<div class="font-label-md text-label-md text-on-surface-muted uppercase tracking-wider">Vehicle ID</div>
+<div class="font-label-md text-label-md text-on-surface-muted uppercase tracking-wider">Service Type</div>
+<div class="font-label-md text-label-md text-on-surface-muted uppercase tracking-wider text-right">Cost</div>
+<div class="font-label-md text-label-md text-on-surface-muted uppercase tracking-wider text-center">Status</div>
+</div>
+<!-- Table Rows -->
+<div class="flex flex-col">
+<!-- Row 1 -->
+<div class="grid grid-cols-5 gap-md px-lg py-lg border-b border-surface-stroke hover:bg-surface-container-high transition-colors items-center group">
+<div class="font-body-sm text-body-sm text-on-surface">Oct 24, 2023</div>
+<div class="font-body-sm text-body-sm text-electric-blue font-semibold">AF-2094</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Full Synthetic Oil Change</span>
+<span class="font-label-md text-label-md text-on-surface-muted mt-xs">Routine Maintenance</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface text-right font-mono">₹4,500.00</div>
+<div class="flex justify-center">
+<span class="inline-flex items-center gap-xs px-sm py-1 rounded-full bg-surface-variant border border-outline-variant text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+                                    Completed
+                                </span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-5 gap-md px-lg py-lg border-b border-surface-stroke hover:bg-surface-container-high transition-colors items-center group">
+<div class="font-body-sm text-body-sm text-on-surface">Oct 21, 2023</div>
+<div class="font-body-sm text-body-sm text-electric-blue font-semibold">AF-1102</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Brake Pad Replacement</span>
+<span class="font-label-md text-label-md text-on-surface-muted mt-xs">Repair</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface text-right font-mono">₹18,500.00</div>
+<div class="flex justify-center">
+<span class="inline-flex items-center gap-xs px-sm py-1 rounded-full bg-surface-variant border border-outline-variant text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+                                    Completed
+                                </span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-5 gap-md px-lg py-lg border-b border-surface-stroke hover:bg-surface-container-high transition-colors items-center group">
+<div class="font-body-sm text-body-sm text-on-surface">Oct 18, 2023</div>
+<div class="font-body-sm text-body-sm text-electric-blue font-semibold">AF-3055</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Transmission Diagnostics</span>
+<span class="font-label-md text-label-md text-on-surface-muted mt-xs">Inspection</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-muted text-right font-mono italic">Pending</div>
+<div class="flex justify-center">
+<span class="inline-flex items-center gap-xs px-sm py-1 rounded-full bg-secondary-container/20 border border-secondary-container text-secondary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-electric-blue animate-pulse"></span>
+                                    In Progress
+                                </span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="grid grid-cols-5 gap-md px-lg py-lg hover:bg-surface-container-high transition-colors items-center group">
+<div class="font-body-sm text-body-sm text-on-surface">Oct 10, 2023</div>
+<div class="font-body-sm text-body-sm text-electric-blue font-semibold">AF-0991</div>
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Tire Rotation &amp; Alignment</span>
+<span class="font-label-md text-label-md text-on-surface-muted mt-xs">Routine Maintenance</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface text-right font-mono">₹2,500.00</div>
+<div class="flex justify-center">
+<span class="inline-flex items-center gap-xs px-sm py-1 rounded-full bg-surface-variant border border-outline-variant text-on-surface font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+                                    Completed
+                                </span>
+</div>
+</div>
+</div>
+<!-- Pagination (Minimal) -->
+<div class="px-lg py-md border-t border-surface-stroke bg-surface-container-lowest flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface-muted">Showing 1-4 of 128 records</span>
+<div class="flex gap-sm">
+<button class="p-xs rounded border border-surface-stroke text-on-surface-muted hover:text-on-surface hover:border-outline-variant transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined" style="font-size: 20px;">chevron_left</span>
+</button>
+<button class="p-xs rounded border border-surface-stroke text-on-surface-muted hover:text-on-surface hover:border-outline-variant transition-colors">
+<span class="material-symbols-outlined" style="font-size: 20px;">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-md mt-auto border-t border-surface-stroke bg-surface flex flex-row justify-between items-center px-margin-desktop gap-md">
+<div class="font-body-sm text-body-sm text-on-surface-muted">
+                © 2024 AeroFleet Management. All rights reserved.
+            </div>
+<div class="flex gap-lg">
+<a class="font-body-sm text-body-sm text-on-surface-muted hover:text-electric-blue transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-muted hover:text-electric-blue transition-colors" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-surface-muted hover:text-electric-blue transition-colors" href="#">Security</a>
+<a class="font-body-sm text-body-sm text-on-surface-muted hover:text-electric-blue transition-colors" href="#">Fleet Standards</a>
+</div>
+</footer>
+</div>
+</body></html>

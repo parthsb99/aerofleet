@@ -1,0 +1,62 @@
+# ==============================================================================
+# AeroFleet – Render Blueprint (render.yaml)
+# ==============================================================================
+# Deploy the full AeroFleet stack to Render with one click.
+#
+# Services:
+#   1. aerofleet-backend  — Node.js Express + Socket.IO (Docker Web Service)
+#   2. aerofleet-frontend — React Vite SPA (Static Site)
+#
+# Before deploying:
+#   • Create a free MongoDB Atlas cluster at https://cloud.mongodb.com
+#   • Get your connection string and set it as MONGO_URI below
+# ==============================================================================
+
+services:
+  # ── 1. Backend (Express + Socket.IO) ────────────────────────────────────────
+  - type: web
+    name: aerofleet-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    region: oregon          # Change to: singapore, frankfurt, ohio as preferred
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Render injects PORT automatically — do NOT set it manually
+      - key: MONGO_URI
+        sync: false         # Set in Render Dashboard → Environment Variables
+      - key: JWT_SECRET
+        generateValue: true # Render auto-generates a secure random value
+      - key: CORS_ORIGIN
+        sync: false         # Set to your frontend URL: https://aerofleet-frontend.onrender.com
+
+  # ── 2. Frontend (React Vite Static Site) ────────────────────────────────────
+  - type: web
+    name: aerofleet-frontend
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./dist
+    plan: free
+    region: oregon
+    routes:
+      # SPA routing — all paths serve index.html so React Router handles them
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      # Prevent caching of index.html so new deploys are picked up immediately
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache, no-store, must-revalidate
+      # Long-term caching for Vite-hashed assets (safe, they change hash on rebuild)
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+    envVars:
+      - key: VITE_API_URL
+        sync: false         # Set to your backend URL: https://aerofleet-backend.onrender.com
+      - key: VITE_SOCKET_URL
+        sync: false         # Set to your backend URL: https://aerofleet-backend.onrender.com

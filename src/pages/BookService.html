@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book a Service - AeroFleet</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for modern onyx dark look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121414; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #30363d; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444748; 
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#e2e2e2",
+                    "tertiary-fixed-dim": "#c2c7d0",
+                    "secondary-fixed": "#dde1ff",
+                    "on-primary": "#313030",
+                    "surface-stroke": "#30363d",
+                    "on-tertiary": "#2c3138",
+                    "on-secondary": "#002388",
+                    "surface-container-high": "#282a2b",
+                    "tertiary": "#c2c7d0",
+                    "on-primary-container": "#7b7979",
+                    "on-secondary-fixed": "#001356",
+                    "on-primary-fixed-variant": "#474646",
+                    "inverse-on-surface": "#2f3131",
+                    "on-error-container": "#ffdad6",
+                    "outline-variant": "#444748",
+                    "on-background": "#e2e2e2",
+                    "secondary": "#b8c3ff",
+                    "surface-container": "#1e2020",
+                    "surface-container-lowest": "#0c0f0f",
+                    "tertiary-fixed": "#dee2ec",
+                    "on-surface-variant": "#c4c7c7",
+                    "electric-blue": "#2e5bff",
+                    "surface-tint": "#c9c6c5",
+                    "tertiary-container": "#060a11",
+                    "primary-fixed": "#e5e2e1",
+                    "secondary-fixed-dim": "#b8c3ff",
+                    "error-container": "#93000a",
+                    "surface": "#121414",
+                    "on-secondary-fixed-variant": "#0035be",
+                    "secondary-container": "#0043eb",
+                    "on-secondary-container": "#c6ceff",
+                    "surface-bright": "#37393a",
+                    "on-tertiary-fixed": "#171c23",
+                    "error": "#ffb4ab",
+                    "surface-dim": "#121414",
+                    "primary-container": "#0a0a0a",
+                    "outline": "#8e9192",
+                    "on-error": "#690005",
+                    "primary": "#c9c6c5",
+                    "surface-container-low": "#1a1c1c",
+                    "primary-fixed-dim": "#c9c6c5",
+                    "on-primary-fixed": "#1c1b1b",
+                    "background": "#121414",
+                    "on-tertiary-fixed-variant": "#42474f",
+                    "on-tertiary-container": "#757982",
+                    "on-surface": "#e2e2e2",
+                    "on-surface-muted": "#8b949e",
+                    "surface-container-highest": "#333535",
+                    "surface-variant": "#333535",
+                    "inverse-primary": "#5f5e5e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "16px",
+                    "base": "8px",
+                    "xl": "32px",
+                    "lg": "24px",
+                    "xs": "4px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "48px",
+                    "md": "16px",
+                    "sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "label-md": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-lg flex h-screen overflow-hidden selection:bg-electric-blue selection:text-white">
+<!-- SideNavBar (Shared Component) -->
+<nav class="h-screen w-64 left-0 top-0 fixed bg-surface-container dark:bg-surface-container border-r border-surface-stroke dark:border-surface-stroke flex flex-col py-lg z-40">
+<!-- Header -->
+<div class="px-lg mb-xl flex items-center gap-md">
+<div class="w-10 h-10 rounded-lg bg-surface-stroke flex items-center justify-center overflow-hidden shrink-0">
+<span class="material-symbols-outlined text-on-surface" style="font-variation-settings: 'FILL' 1;">directions_car</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tighter leading-tight">Fleet Control</h1>
+<p class="font-label-md text-label-md text-on-surface-muted">Premium Tier</p>
+</div>
+</div>
+<!-- CTA -->
+<div class="px-lg mb-lg">
+<button class="w-full bg-electric-blue hover:bg-secondary-container transition-colors text-white font-label-md text-label-md py-sm px-md rounded-lg flex items-center justify-center gap-sm active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add Vehicle
+            </button>
+</div>
+<!-- Main Navigation Tabs -->
+<div class="flex-1 flex flex-col gap-xs px-sm">
+<!-- Dashboard (Inactive) -->
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-high transition-all active:scale-95 duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<!-- Book Service (Active) -->
+<a class="flex items-center gap-md px-md py-sm rounded-lg bg-secondary-container dark:bg-secondary-container text-on-secondary-container dark:text-on-secondary-container border-l-4 border-electric-blue hover:bg-surface-container-high dark:hover:bg-surface-container-high transition-all active:scale-95 duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_add_on</span>
+<span class="font-label-md text-label-md">Book Service</span>
+</a>
+<!-- Service History (Inactive) -->
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-high transition-all active:scale-95 duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="font-label-md text-label-md">Service History</span>
+</a>
+<!-- My Vehicles (Inactive) -->
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-high transition-all active:scale-95 duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined">directions_car</span>
+<span class="font-label-md text-label-md">My Vehicles</span>
+</a>
+</div>
+<!-- Footer Tabs -->
+<div class="mt-auto flex flex-col gap-xs px-sm">
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-high transition-all active:scale-95 duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="font-label-md text-label-md">Support</span>
+</a>
+<a class="flex items-center gap-md px-md py-sm rounded-lg text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high dark:hover:bg-surface-container-high transition-all active:scale-95 duration-200 cursor-pointer" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span class="font-label-md text-label-md">Sign Out</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Wrapper -->
+<div class="flex-1 ml-64 flex flex-col relative h-full">
+<!-- TopNavBar (Shared Component) -->
+<header class="w-full top-0 z-50 bg-surface dark:bg-surface border-b border-surface-stroke dark:border-surface-stroke flex justify-between items-center h-16 px-margin-desktop sticky">
+<!-- Brand (Optional here if SideNav is present, but kept per JSON layout requirements) -->
+<div class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface tracking-tighter hidden md:block">
+                AeroFleet
+            </div>
+<div class="flex-1 flex justify-end items-center gap-lg">
+<!-- Search Bar Placeholder (on_right) -->
+<div class="relative w-64 hidden lg:block group">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-muted group-focus-within:text-electric-blue transition-colors">search</span>
+<input class="w-full bg-surface-container-high border border-surface-stroke rounded-full py-xs pl-xl pr-md font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-muted focus:outline-none focus:border-electric-blue focus:ring-1 focus:ring-electric-blue transition-all" placeholder="Search fleet..." type="text"/>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-sm border-l border-surface-stroke pl-md ml-md">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-muted hover:text-electric-blue hover:bg-surface-container transition-all cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-muted hover:text-electric-blue hover:bg-surface-container transition-all cursor-pointer active:opacity-70">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<!-- Profile -->
+<div class="w-8 h-8 rounded-full overflow-hidden ml-sm border border-surface-stroke cursor-pointer hover:border-electric-blue transition-colors">
+<img alt="Fleet Manager Profile" class="w-full h-full object-cover" data-alt="A close-up, highly detailed portrait of a professional fleet manager. High-key dramatic lighting on a dark background, matching the Modern Onyx Dark aesthetic. Clean, sharp focus, professional demeanor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2IZunI_FdSv05yIV-GNxPcFk09QncRQFk1NTdfVVzSCiYts8E5KhZicBKRF0hhpxQU2fl_zEfyGmgIiLQoAB9DXBCD0w9JaOpm-en0X7cVGaEJU_OhV_85Vj_T9L27AA9V1lQ65V-JBWMXDfYxsHkED9XWB9NXqzDq9ISwKfhI5BisQQzgmgFOQeqqAPo1s81_Lr-_AOQPbyJTxJ52SscqeGBwytFGUEPKyVAYPuOUq8sdfj6HUixMw"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Page Content Canvas -->
+<main class="flex-1 overflow-y-auto p-lg md:p-margin-desktop">
+<div class="max-w-7xl mx-auto">
+<!-- Header & Progress -->
+<div class="mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Schedule Maintenance</h2>
+<p class="font-body-lg text-body-lg text-on-surface-muted">Select the required services for <span class="text-on-surface font-semibold">MH 12 AB 3456</span>.</p>
+</div>
+<!-- Grid Layout: 12 Columns -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl relative">
+<!-- Left Column: Service Selection (col-span-8) -->
+<div class="md:col-span-8 flex flex-col gap-lg">
+<!-- Step Indicator -->
+<div class="flex items-center gap-sm mb-sm">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-electric-blue text-white font-label-md text-label-md">1</div>
+<span class="font-label-md text-label-md text-on-surface">Select Services</span>
+<div class="w-8 h-[1px] bg-surface-stroke mx-xs"></div>
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-high border border-surface-stroke text-on-surface-muted font-label-md text-label-md">2</div>
+<span class="font-label-md text-label-md text-on-surface-muted">Date &amp; Time</span>
+</div>
+<!-- Service Cards (Bento style grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+<!-- Card 1: Selected State -->
+<div class="group relative bg-surface-container border-2 border-electric-blue rounded-xl p-md flex flex-col cursor-pointer transition-all hover:bg-surface-container-high">
+<!-- Ambient glow for selected state -->
+<div class="absolute inset-0 bg-electric-blue/5 rounded-xl pointer-events-none"></div>
+<div class="flex justify-between items-start mb-md relative z-10">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/20 flex items-center justify-center text-electric-blue">
+<span class="material-symbols-outlined text-[24px]">oil_barrel</span>
+</div>
+<span class="material-symbols-outlined text-electric-blue" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface font-semibold mb-xs relative z-10">Synthetic Oil Change</h3>
+<p class="font-body-sm text-body-sm text-on-surface-muted mb-lg flex-1 relative z-10">Full synthetic motor oil replacement and filter change.</p>
+<div class="flex justify-between items-end relative z-10">
+<span class="font-label-md text-label-md text-on-surface-muted bg-surface-container-high px-2 py-1 rounded">~45 mins</span>
+<span class="font-headline-md text-[18px] text-on-surface">₹7,400.00</span>
+</div>
+</div>
+<!-- Card 2: Unselected State -->
+<div class="group bg-surface-container border border-surface-stroke rounded-xl p-md flex flex-col cursor-pointer transition-all hover:border-outline-variant hover:bg-surface-container-high">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[24px]">car_crash</span>
+</div>
+<div class="w-6 h-6 rounded-full border border-surface-stroke group-hover:border-outline-variant"></div>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface font-semibold mb-xs">Brake Inspection</h3>
+<p class="font-body-sm text-body-sm text-on-surface-muted mb-lg flex-1">Comprehensive check of brake pads, rotors, and fluid levels.</p>
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-muted bg-surface-container-high px-2 py-1 rounded">~30 mins</span>
+<span class="font-headline-md text-[18px] text-on-surface">Free</span>
+</div>
+</div>
+<!-- Card 3: Unselected State -->
+<div class="group bg-surface-container border border-surface-stroke rounded-xl p-md flex flex-col cursor-pointer transition-all hover:border-outline-variant hover:bg-surface-container-high">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[24px]">tire_repair</span>
+</div>
+<div class="w-6 h-6 rounded-full border border-surface-stroke group-hover:border-outline-variant"></div>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface font-semibold mb-xs">Tire Rotation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-muted mb-lg flex-1">Rotate tires to ensure even wear and extend lifespan.</p>
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-muted bg-surface-container-high px-2 py-1 rounded">~20 mins</span>
+<span class="font-headline-md text-[18px] text-on-surface">₹2,000.00</span>
+</div>
+</div>
+<!-- Card 4: Unselected State -->
+<div class="group bg-surface-container border border-surface-stroke rounded-xl p-md flex flex-col cursor-pointer transition-all hover:border-outline-variant hover:bg-surface-container-high">
+<div class="flex justify-between items-start mb-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[24px]">build</span>
+</div>
+<div class="w-6 h-6 rounded-full border border-surface-stroke group-hover:border-outline-variant"></div>
+</div>
+<h3 class="font-headline-md text-[18px] leading-snug text-on-surface font-semibold mb-xs">Diagnostics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-muted mb-lg flex-1">Computerized engine diagnostic test for warning lights.</p>
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-muted bg-surface-container-high px-2 py-1 rounded">~60 mins</span>
+<span class="font-headline-md text-[18px] text-on-surface">₹10,000.00</span>
+</div>
+</div>
+</div>
+<!-- Add Custom Note -->
+<div class="mt-md">
+<label class="font-label-md text-label-md text-on-surface-muted block mb-xs">Additional Notes for Technician (Optional)</label>
+<textarea class="w-full bg-surface-container border border-surface-stroke rounded-lg p-sm font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-muted focus:outline-none focus:border-electric-blue focus:ring-1 focus:ring-electric-blue transition-all min-h-[100px]" placeholder="Describe any specific issues or concerns..."></textarea>
+</div>
+</div>
+<!-- Right Column: Summary Panel (col-span-4) -->
+<div class="md:col-span-4 relative">
+<div class="bg-[#161b22] border border-[#30363d] rounded-xl p-lg sticky top-lg shadow-lg flex flex-col h-fit">
+<h3 class="font-headline-md text-[20px] text-on-surface mb-md">Booking Summary</h3>
+<!-- Vehicle Info Mini Card -->
+<div class="flex items-center gap-md p-sm bg-surface-container-highest rounded-lg mb-lg border border-surface-stroke">
+<div class="w-16 h-12 rounded overflow-hidden bg-surface-dim">
+<img alt="Vehicle preview" class="w-full h-full object-cover" data-alt="A sleek, modern commercial delivery van parked in a high-tech facility. The lighting is cinematic and dark, emphasizing the vehicle's metallic surfaces and precision engineering. Modern Onyx Dark aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB509wKfjojiVsv3PmxYeehXwfhy4DPPoomBQnxYWOQ2ZucWEKncpJqoxWLMGZfciBQuwAwyKvA0msEboX1AmARvzzx1RAMdyW6PiJe4isUioa1WM2wE8YWRIS4oqQSbi9oTOC3uJL33WuX34Jcn3HiV1u0amxgQlvgMW0TOh4lTgF4sKWUb3k5xJln768wlqFhX8HIJ9_0CIWOCzP8qk-AGc3I2mvpYzvTOm1uRPlcUDhAxsc-MNeBqA"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface">MH 12 AB 3456</p>
+<p class="font-body-sm text-[12px] text-on-surface-muted">2022 Tata Ace Gold</p>
+</div>
+</div>
+<hr class="border-surface-stroke mb-lg"/>
+<!-- Selected Items List -->
+<div class="flex flex-col gap-sm mb-xl">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Synthetic Oil Change</p>
+<p class="font-label-md text-[11px] text-on-surface-muted">~45 mins</p>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">₹7,400.00</span>
+</div>
+<!-- Example of second item if selected -->
+<div class="flex justify-between items-start opacity-50">
+<div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Brake Inspection</p>
+<p class="font-label-md text-[11px] text-on-surface-muted">~30 mins</p>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Free</span>
+</div>
+</div>
+<hr class="border-surface-stroke mb-md"/>
+<!-- Totals -->
+<div class="flex flex-col gap-xs mb-lg">
+<div class="flex justify-between items-center text-on-surface-muted font-body-sm text-body-sm">
+<span>Subtotal</span>
+<span>₹7,400.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-muted font-body-sm text-body-sm">
+<span>Taxes &amp; Fees (Est.)</span>
+<span>₹740.00</span>
+</div>
+<div class="flex justify-between items-center mt-sm pt-sm border-t border-surface-stroke">
+<span class="font-headline-md text-[18px] text-on-surface">Estimated Total</span>
+<span class="font-headline-md text-[20px] text-electric-blue">₹8,140.00</span>
+</div>
+<p class="font-label-md text-[11px] text-on-surface-muted text-right mt-xs">Final price may vary based on inspection.</p>
+</div>
+<!-- CTA -->
+<button class="w-full bg-electric-blue hover:bg-secondary-container transition-colors text-white font-label-md text-label-md py-md rounded-lg flex items-center justify-center gap-sm active:scale-95 duration-200 shadow-[0_0_15px_rgba(46,91,255,0.2)]">
+                                Continue to Scheduling
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

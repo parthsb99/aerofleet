@@ -1,0 +1,3 @@
+/* Render Static Site – SPA routing fallback
+   All routes serve index.html so React Router handles client-side navigation */
+/*    /index.html   200

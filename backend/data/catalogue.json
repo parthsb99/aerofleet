@@ -1,0 +1,1836 @@
+{
+  "Audi": [
+    {
+      "model": "A4",
+      "segment": "Hatchback",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Q3",
+      "segment": "SUV",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Q5",
+      "segment": "Sedan",
+      "year": 2016,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "BMW": [
+    {
+      "model": "2 Series",
+      "segment": "Hatchback",
+      "year": 2021,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "3 Series",
+      "segment": "Hatchback",
+      "year": 2021,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "X1",
+      "segment": "SUV",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "BYD": [
+    {
+      "model": "Atto 3",
+      "segment": "Sedan",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "E6",
+      "segment": "Compact SUV",
+      "year": 2021,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Citroen": [
+    {
+      "model": "C3",
+      "segment": "Sedan",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "C5 Aircross",
+      "segment": "Sedan",
+      "year": 2021,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Force": [
+    {
+      "model": "Gurkha",
+      "segment": "SUV",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Honda": [
+    {
+      "model": "Amaze",
+      "segment": "Sedan",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "City",
+      "segment": "SUV",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Elevate",
+      "segment": "SUV",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "WR-V",
+      "segment": "SUV",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Hyundai": [
+    {
+      "model": "Alcazar",
+      "segment": "Electric SUV",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Aura",
+      "segment": "Compact SUV",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Creta",
+      "segment": "Compact SUV",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Exter",
+      "segment": "Compact SUV",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Venue",
+      "segment": "Compact SUV",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Verna",
+      "segment": "Compact SUV",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "i20",
+      "segment": "Luxury",
+      "year": 2018,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT"
+      ]
+    }
+  ],
+  "Jeep": [
+    {
+      "model": "Compass",
+      "segment": "Compact SUV",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Meridian",
+      "segment": "Hatchback",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Kia": [
+    {
+      "model": "Carens",
+      "segment": "Electric Hatchback",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "EV6",
+      "segment": "SUV",
+      "year": 2021,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Seltos",
+      "segment": "Hatchback",
+      "year": 2021,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Sonet",
+      "segment": "Compact SUV",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Lexus": [
+    {
+      "model": "ES",
+      "segment": "Hatchback",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "NX",
+      "segment": "Compact SUV",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "RX",
+      "segment": "Hatchback",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "MG": [
+    {
+      "model": "Astor",
+      "segment": "Electric Hatchback",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Comet EV",
+      "segment": "Sedan",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Gloster",
+      "segment": "SUV",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Hector",
+      "segment": "Hatchback",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "ZS EV",
+      "segment": "Hatchback",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Mahindra": [
+    {
+      "model": "Bolero",
+      "segment": "Compact SUV",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Marazzo",
+      "segment": "Hatchback",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Scorpio",
+      "segment": "Electric SUV",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Thar",
+      "segment": "SUV",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "XUV 300",
+      "segment": "Electric Hatchback",
+      "year": 2016,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "XUV 700",
+      "segment": "Compact SUV",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Maruti Suzuki": [
+    {
+      "model": "Baleno",
+      "segment": "Electric SUV",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Brezza",
+      "segment": "SUV",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Dzire",
+      "segment": "Sedan",
+      "year": 2023,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Ertiga",
+      "segment": "Electric Hatchback",
+      "year": 2016,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Fronx",
+      "segment": "Electric SUV",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Swift",
+      "segment": "Compact SUV",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Wagon R",
+      "segment": "Compact SUV",
+      "year": 2021,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT"
+      ]
+    }
+  ],
+  "Mercedes": [
+    {
+      "model": "A-Class",
+      "segment": "Hatchback",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "C-Class",
+      "segment": "Compact SUV",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "GLA",
+      "segment": "Sedan",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Nissan": [
+    {
+      "model": "Kicks",
+      "segment": "SUV",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Magnite",
+      "segment": "Electric Hatchback",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Renault": [
+    {
+      "model": "Kiger",
+      "segment": "Hatchback",
+      "year": 2016,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Kwid",
+      "segment": "Hatchback",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Triber",
+      "segment": "Electric SUV",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Skoda": [
+    {
+      "model": "Kushaq",
+      "segment": "SUV",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Slavia",
+      "segment": "Compact SUV",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Superb",
+      "segment": "Compact SUV",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Tata": [
+    {
+      "model": "Altroz",
+      "segment": "Electric Hatchback",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Harrier",
+      "segment": "Compact SUV",
+      "year": 2015,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Nexon",
+      "segment": "MPV",
+      "year": 2016,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Punch",
+      "segment": "Compact SUV",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Safari",
+      "segment": "Sedan",
+      "year": 2018,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Tiago",
+      "segment": "Electric Hatchback",
+      "year": 2016,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Tigor",
+      "segment": "Sedan",
+      "year": 2019,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Toyota": [
+    {
+      "model": "Camry",
+      "segment": "Hatchback",
+      "year": 2023,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Fortuner",
+      "segment": "Electric SUV",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Hilux",
+      "segment": "Luxury",
+      "year": 2016,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Innova",
+      "segment": "Sedan",
+      "year": 2018,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Urban Cruiser",
+      "segment": "Hatchback",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ],
+  "Volkswagen": [
+    {
+      "model": "Polo",
+      "segment": "Hatchback",
+      "year": 2022,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Taigun",
+      "segment": "Hatchback",
+      "year": 2020,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    },
+    {
+      "model": "Virtus",
+      "segment": "Electric SUV",
+      "year": 2017,
+      "fuelTypes": [
+        "Diesel",
+        "Electric",
+        "Petrol",
+        "Petrol/CNG",
+        "Petrol/Diesel"
+      ],
+      "variants": [
+        "Diesel AT",
+        "Diesel MT",
+        "Electric Long Range",
+        "Electric Standard Range",
+        "Petrol AT",
+        "Petrol MT",
+        "Petrol/CNG AT",
+        "Petrol/CNG MT",
+        "Petrol/Diesel AT",
+        "Petrol/Diesel MT"
+      ]
+    }
+  ]
+}

@@ -9,6 +9,8 @@
     "server": "node backend/server.js",
     "server:dev": "nodemon backend/server.js",
     "build": "vite build",
+    "start": "node backend/server.js",
+    "render-build": "npm ci && cd backend && npm ci && cd .. && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -249,7 +249,7 @@ async function backfillHistoricalPricing() {
     console.error('Backfill historical pricing error:', err);
   }
 }
-setTimeout(backfillHistoricalPricing, 1000);
+router.backfillHistoricalPricing = backfillHistoricalPricing;
 
 /* ──────────────────────────────────────────────────────────────────────────
    1. DASHBOARD OVERVIEW STATS

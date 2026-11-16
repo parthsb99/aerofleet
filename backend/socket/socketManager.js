@@ -34,7 +34,12 @@ function initSocket(httpServer) {
   io = new Server(httpServer, {
     cors: {
       origin: (origin, callback) => {
-        if (!origin || allowed.includes(origin) || /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) {
+        if (
+          !origin ||
+          allowed.includes(origin) ||
+          /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin) ||
+          /^https:\/\/[a-z0-9-]+\.onrender\.com$/.test(origin)
+        ) {
           return callback(null, true);
         }
         callback(new Error('Not allowed by CORS'));

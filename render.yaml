@@ -1,60 +1,28 @@
 # ==============================================================================
-# AeroFleet – Render Blueprint (render.yaml)
+# AeroFleet – All-in-One Single Service Render Blueprint (render.yaml)
 # ==============================================================================
-# Deploy the full AeroFleet stack to Render with one click.
+# Deploys BOTH Frontend & Backend together as a single unified service on Render!
 #
-# Services:
-#   1. aerofleet-backend  — Node.js Express + Socket.IO (Docker Web Service)
-#   2. aerofleet-frontend — React Vite SPA (Static Site)
-#
-# Before deploying:
-#   • Create a free MongoDB Atlas cluster at https://cloud.mongodb.com
-#   • Get your connection string and set it as MONGO_URI below
+# • Frontend: Vite React SPA (built during render-build and served statically)
+# • Backend: Node.js Express REST API + Socket.IO WebSockets on the same port
+# • No CORS issues, no separate service syncing, no multi-platform headache!
 # ==============================================================================
 
 services:
-  # ── 1. Backend (Express + Socket.IO) ────────────────────────────────────────
   - type: web
-    name: aerofleet-backend
-    runtime: docker
-    dockerfilePath: ./backend/Dockerfile
-    dockerContext: ./backend
+    name: aerofleet
+    runtime: node
     plan: free
-    region: oregon          # Change to: singapore, frankfurt, ohio as preferred
+    region: oregon          # Options: oregon, frankfurt, singapore, ohio
+    buildCommand: npm run render-build
+    startCommand: npm start
     healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
-      # Render injects PORT automatically — do NOT set it manually
+      # MONGO_URI: Your MongoDB Atlas connection string (set in Render Dashboard)
       - key: MONGO_URI
-        sync: false         # Set in Render Dashboard → Environment Variables
+        sync: false
+      # JWT_SECRET: Render auto-generates a secure random 64-char key
       - key: JWT_SECRET
-        generateValue: true # Render auto-generates a secure random value
-      - key: CORS_ORIGIN
-        sync: false         # Set to your frontend URL: https://aerofleet-frontend.onrender.com
-
-  # ── 2. Frontend (React Vite Static Site) ────────────────────────────────────
-  - type: web
-    name: aerofleet-frontend
-    runtime: static
-    buildCommand: npm ci && npm run build
-    staticPublishPath: ./dist
-    routes:
-      # SPA routing — all paths serve index.html so React Router handles them
-      - type: rewrite
-        source: /*
-        destination: /index.html
-    headers:
-      # Prevent caching of index.html so new deploys are picked up immediately
-      - path: /index.html
-        name: Cache-Control
-        value: no-cache, no-store, must-revalidate
-      # Long-term caching for Vite-hashed assets (safe, they change hash on rebuild)
-      - path: /assets/*
-        name: Cache-Control
-        value: public, max-age=31536000, immutable
-    envVars:
-      - key: VITE_API_URL
-        value: https://aerofleet-backend.onrender.com
-      - key: VITE_SOCKET_URL
-        value: https://aerofleet-backend.onrender.com
+        generateValue: true

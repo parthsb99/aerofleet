@@ -1,4 +1,6 @@
 const http = require('http');
+const path = require('path');
+const fs = require('fs');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -66,6 +68,22 @@ app.use('/api/expenses',      expenseRoutes);
 app.use('/api/admin',         adminRoutes);
 app.use('/api/notifications', notificationRoutes);
 
+// ── Serve Production Frontend SPA if built ──────────────────────────────────
+const distPath = path.resolve(__dirname, '../dist');
+if (fs.existsSync(distPath)) {
+  console.log(`Serving static frontend build from ${distPath}`);
+  app.use(express.static(distPath));
+
+  // SPA fallback for client-side routing (React Router)
+  app.use((req, res, next) => {
+    // Only handle GET requests that did not match an /api route
+    if (req.method === 'GET' && !req.path.startsWith('/api')) {
+      return res.sendFile(path.join(distPath, 'index.html'));
+    }
+    next();
+  });
+}
+
 // Wrap in native HTTP server so Socket.IO can share the same port
 const httpServer = http.createServer(app);
 
@@ -83,10 +101,13 @@ const server = httpServer.listen(PORT, '0.0.0.0', () => {
 if (!MONGO_URI) {
   console.warn('⚠️ WARNING: MONGO_URI environment variable is not defined.');
 } else {
-  mongoose.connect(MONGO_URI).then(() => {
+  mongoose.connect(MONGO_URI).then(async () => {
     console.log('Connected to MongoDB');
     if (authRoutes.seedAdminUser) {
       authRoutes.seedAdminUser();
+    }
+    if (adminRoutes.backfillHistoricalPricing) {
+      await adminRoutes.backfillHistoricalPricing();
     }
   }).catch(err => {
     console.error('MongoDB connection error:', err);
